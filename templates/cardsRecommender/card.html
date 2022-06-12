@@ -1,0 +1,31 @@
+<h1>{{ monster.c_name }}</h1>
+<ul>
+    <li>{{ monster.c_description }}</li>
+    <li>{{ monster.c_race }}</li>
+    <li>{{ monster.c_type }}</li>
+    <li>{{ monster.c_level }}</li>
+    <li>{{ monster.c_attribute }}</li>
+    <li>{{ monster.c_atk }}</li>
+    <li>{{ monster.c_def }}</li>
+</ul>
+
+{{exactLvl}}
+{{higherLvl}}
+{{lowerLvl}}
+<br/>
+{{theExactLvl}}
+{{theHigherLvl}}
+{{theLowerLvl}}
+<br/>
+{{race}}
+{{attr}}
+<!--<ul>
+    {% for mons in recommendedMonsters %}
+        <li><a href="/cardsRecommender/{{ mons.id }}/">{{ mons }}</a></li>
+    {% endfor %}
+</ul>-->
+<ul>
+    {%for m in recommendedMonsters%}
+    <li>{{m.c_name}}</li>
+    {%endfor%}
+</ul>
