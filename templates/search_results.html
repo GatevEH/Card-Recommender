@@ -1,0 +1,28 @@
+<table id="search-results-table">
+    <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Type</td>
+        <td>ATK</td>
+        <td>DEF</td>
+        <td>LVL</td>
+        <td>Race</td>
+        <td>Attribute</td>
+        <td>Archetype</td>
+    </thead>
+    {% for card in cards %}
+        <tbody>
+            <tr>
+                <td>{{card.ID}}</td>
+                <td><a class="card-link" href="/c/{{card.ID}}">{{card.Name}}</a></td>
+                <td>{{card.Type}}</td>
+                <td>{{card.ATK}}</td>
+                <td>{{card.DEF}}</td>
+                <td>{{card.LVL}}</td>
+                <td>{{card.Race}}</td>
+                <td>{{card.Attribute}}</td>
+                <td>{{card.Archetype}}</td>
+            </tr>
+        </tbody>
+    {% endfor %}
+</table>

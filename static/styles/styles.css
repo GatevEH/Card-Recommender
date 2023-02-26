@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Russo';
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+
+* {
+    font-family: "Russo";
+    color: #00a8f3;
+}
+
+#site-logo {
+    font-size: 50px;
+}
+
+#logo-link:link {
+    color: #00a8f3;
+    text-decoration: none;
+}
+
+#logo-link:visited {
+    color: #00a8f3;
+    text-decoration: none;
+}
+
+#logo-link:hover {
+    color: #00a8f3;
+    text-decoration: none;
+}
+
+#logo-link:active {
+    color: #00a8f3;
+    text-decoration: none;
+}
+
+#section-underline {
+    background-color: #00a8f3;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+#search-results-table {
+    width: 100%;
+}
+
+#search-results-table td {
+    border: 1px solid red;
+}
+
+.card-link:link {
+    color: #00a8f3;
+}
+
+.card-link:visited {
+    color: #00a8f3;
+}
+
+.card-link:hover {
+    color: #00a8f3;
+}
+
+.card-link:active {
+    color: #00a8f3;
+}
+
+#card-image {
+    width: 300px;
+    height: 400px;
+}

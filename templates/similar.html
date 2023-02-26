@@ -1,0 +1,14 @@
+<h3>Similar</h3>
+<div class="row" id="section-underline">
+</div>
+{% if keys != [] %}
+    <table width="100%">
+        {% for card in cards %}
+        <tr>
+            <td><a href="/c/{{card.ID}}" data-bs-toggle="tooltip" data-bs-html="true" title="<img height='240px' width='180px' src='{{card.Image}}'>">{{card.Name}}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <h5>No similar cards!</h5>
+{% endif %}

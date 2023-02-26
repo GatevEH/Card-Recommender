@@ -1,0 +1,15 @@
+<h3>Versions</h3>
+<div class="row" id="section-underline">
+</div>
+{% if version != [] %}
+    <table width="100%">
+        {% for version in versions %}
+            <tr>
+                <td><a data-bs-toggle="tooltip" data-bs-html="true" title="<img height='240px' width='180px' src='https:/{{version.Image}}'>">{{version.Title}}</a></td>
+                <td>{{version.Price}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <h5>No versions found on the market!</h5>
+{% endif %}
